@@ -1,0 +1,272 @@
+object Form1: TForm1
+  Left = 1149
+  Height = 438
+  Top = 354
+  Width = 698
+  Caption = 'Form1'
+  ClientHeight = 438
+  ClientWidth = 698
+  Menu = MainMenu1
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object sgCalls: TStringGrid
+    Left = 0
+    Height = 200
+    Top = 238
+    Width = 698
+    Align = alBottom
+    ColCount = 6
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    ColWidths = (
+      64
+      69
+      110
+      169
+      150
+      129
+    )
+    Cells = (
+      5
+      1
+      0
+      'Дата'
+      2
+      0
+      'Время'
+      3
+      0
+      'Кто звонил'
+      4
+      0
+      'Кому'
+      5
+      0
+      'Тема'
+    )
+  end
+  object edCallDate: TEdit
+    Left = 8
+    Height = 23
+    Top = 32
+    Width = 80
+    TabOrder = 1
+    OnChange = edCallDateChange
+  end
+  object edCallTime: TEdit
+    Left = 96
+    Height = 23
+    Top = 32
+    Width = 80
+    TabOrder = 2
+    OnChange = edCallTimeChange
+  end
+  object edCaller: TEdit
+    Left = 184
+    Height = 23
+    Top = 32
+    Width = 120
+    TabOrder = 3
+  end
+  object edCallee: TEdit
+    Left = 312
+    Height = 23
+    Top = 32
+    Width = 120
+    TabOrder = 4
+  end
+  object edTopic: TEdit
+    Left = 440
+    Height = 23
+    Top = 32
+    Width = 80
+    TabOrder = 5
+  end
+  object edDuration: TEdit
+    Left = 528
+    Height = 23
+    Top = 32
+    Width = 96
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 20
+    Top = 11
+    Width = 44
+    Caption = 'Дата'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Height = 20
+    Top = 11
+    Width = 48
+    Caption = 'Время'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 184
+    Height = 20
+    Top = 11
+    Width = 88
+    Caption = 'Кто звонил'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 312
+    Height = 20
+    Top = 11
+    Width = 40
+    Caption = 'Кому'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 440
+    Height = 20
+    Top = 13
+    Width = 38
+    Caption = 'Тема'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 528
+    Height = 20
+    Top = 13
+    Width = 163
+    Caption = 'Продолжительность'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Image1: TImage
+    Left = 8
+    Height = 82
+    Top = 152
+    Width = 50
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869635903000089504E47
+      0D0A1A0A0000000D494844520000002D0000004B0806000000E4B70EDD000003
+      0E494441547801E4583B8E143110B539C508090448FC0242E28D4890C8202425
+      DA80980310136CC415E00644C484042090008184E616506F7B5FA9E4B1DBEEDF
+      B4DBBBEA3755ED2D979F5FD5787AE68A1BFEF74FA60C8184CF7B8D213D2F8311
+      D99A266DDB61A83653E646D76A5AE9E88ED71AEC533A5AD647AF1FBA1C1EBCB8
+      E6886063D19C414CF6B68F7476F25A014D908E96CFB6C3FED7DEED2FF0E1D527
+      17C3EEC6CEED2EB044359A507A096166CF09A5A32DC1773FAC5DF5F3DB3F8EB0
+      E3D667FBC0DAD6B231E247D795F1EC05D2D9A0DA02DA22CD773F2CCA4C2CA4FA
+      A056694BE985149D256D5269FBA1C1D30236B56ACF29A15370121125F13A3170
+      92A483B8AA6E374BDA8B8C84B8E32E9E2EB03871089B8D63B077E5B985B031E2
+      674F92E32B2DACA65E4D90669BC06605399508E2449E4908B4480E32552FE680
+      D5C1CE89B64A134A77FBABFC75B0D22821F1FCF113479CDCBCED14A655D83207
+      D6C61B9FB96103EDB45506930E12AD72DB04692D819510A522D80EB036E6FAFD
+      7B8ED03631650FC7EC5CEB232F61C7ADDF84D27643D5FA454ADBD2FEFEF2D511
+      A95DB14DC658E6864DE52F229D9ABCD6F86649674F8C94A228E1DC48AD65C737
+      ABB4DDC426FCA4D2F6C438E64E3EFEFCEE88D4BA49D2A909358CB74BFAE98F6F
+      8E7826E523A6A8CE7CB0CC077B26490971ED856F53E7685769BBDD1AFC22A5BD
+      F7CE7BC0CFC6D97B3F3A6711E9D998CE94A85DD2EFE41B08C16F30B07F5F9E3A
+      02A7400E8C85C57CA2A7005EFE4788DB5DED2ADDEDAF9ED7A4D2FCFC87B574ED
+      33C9D537678E787FEB8ECB81B1B0368FCD5FE22749974C5E2B66B3A4F9EE8455
+      F1F8F90FAB8395389B55BA12FDCA6914298D1384284FBD5C6411E9E5961F97B9
+      09D238410895012708C13681D580890E9F41608354D1DF649A503AD8689DB77D
+      4AB34D60953DDB04162D426840A1C379B0855334AC8FB406D5E6344D1A2D42A8
+      F0681102BF591028790E9C175A4DDE395C13B61B91D7EA95168E07D7A5218D52
+      11072A60202C79EC1E710930376C34E4D2281DDDFD3107A72A8D12C650B287D8
+      3C8C65E74E259D5D6089804D92FE0F0000FFFF52F41981000000064944415403
+      008884DA9D8DDA848A0000000049454E44AE426082
+    }
+  end
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 64
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem2: TMenuItem
+        Caption = 'Создать'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Открыть'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Сохранить как'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Закрыть'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Выход'
+        OnClick = MenuItem6Click
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Запись'
+      object MenuItem9: TMenuItem
+        Caption = 'Добавить'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Редактировать'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Удалить'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Сортировка'
+        object MenuItem15: TMenuItem
+          Caption = 'По возрастанию'
+          OnClick = MenuItem15Click
+        end
+        object MenuItem16: TMenuItem
+          Caption = 'По убыванию'
+          OnClick = MenuItem16Click
+        end
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Поиск'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Очистить'
+        OnClick = MenuItem14Click
+      end
+    end
+  end
+end

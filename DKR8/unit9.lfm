@@ -1,0 +1,159 @@
+object Form1: TForm1
+  Left = 846
+  Height = 248
+  Top = 260
+  Width = 691
+  Caption = 'Form1'
+  ClientHeight = 248
+  ClientWidth = 691
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object eA: TEdit
+    Left = 336
+    Height = 23
+    Top = 96
+    Width = 152
+    TabOrder = 0
+  end
+  object eB: TEdit
+    Left = 336
+    Height = 23
+    Top = 136
+    Width = 152
+    TabOrder = 1
+  end
+  object eH: TEdit
+    Left = 336
+    Height = 23
+    Top = 176
+    Width = 152
+    TabOrder = 2
+  end
+  object eResult: TEdit
+    Left = 336
+    Height = 23
+    Top = 40
+    Width = 312
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object cbFigure: TComboBox
+    Left = 520
+    Height = 23
+    Top = 96
+    Width = 137
+    ItemHeight = 15
+    TabOrder = 4
+    Text = 'Квадрат'
+    OnChange = cbFigureChange
+  end
+  object bCalc: TButton
+    Left = 520
+    Height = 71
+    Top = 128
+    Width = 136
+    Caption = 'Вычислить'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = bCalcClick
+  end
+  object lResult: TLabel
+    Left = 336
+    Height = 30
+    Top = 8
+    Width = 126
+    Caption = 'Результат:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lFigure: TLabel
+    Left = 520
+    Height = 25
+    Top = 64
+    Width = 138
+    Caption = 'Выбор фигуры'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lFigure1: TLabel
+    Left = 32
+    Height = 25
+    Top = 96
+    Width = 294
+    Caption = 'сторона a / радиус / основание'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    OnClick = lFigure1Click
+  end
+  object lFigure2: TLabel
+    Left = 224
+    Height = 25
+    Top = 134
+    Width = 98
+    Caption = 'сторона b'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lFigure3: TLabel
+    Left = 232
+    Height = 25
+    Top = 168
+    Width = 91
+    Caption = 'Высота h'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Image1: TImage
+    Left = 264
+    Height = 50
+    Top = 13
+    Width = 48
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869635602000089504E47
+      0D0A1A0A0000000D49484452000000300000003008060000005702F987000002
+      0B494441547801EC573B6E0251101BA8926E0F01653A283908654E9612EE9112
+      BA947088ED928EC84A2C1984A57962B55F902C8FDECECC7B7E1E2DDA7934F47B
+      89B894A0A16DA331014D1DA8B4CFF404B83129BD39D747D7333DA7E740E656DA
+      CC493990B1F5EB740AE2FB72897BE07370466466DF9480CC665DE58C4B805AA6
+      B1DE2EEC27744C168B45109AAF319F83B55663F6066BAD3BCFB81C50C54389E7
+      CE1A15003B09D84FBCCE6641687E26661D58F3D91BCC3DC19AA3677E8E90DE4C
+      17B175E063B70BE2783C06713E9F83D0B747E9E1B596FDC0FBFD3E08EE0976FD
+      AD0057D0B7F5F10A58AD5641E08D40C04E825683613FE15CE273306A08F60373
+      9F5B763DC7EB8053DCB7F5940355554555FD816305569B613FC1D1B8653E076B
+      ADC69BF53A88CC65A504641A7595336D015562B4D499CCA87C1E0E4168AD8BA7
+      ED80BB9536D78B1D785B2E837007D5D172391C13B0CBC9AC170BC8346D3367BC
+      02EABA8EFA1F7AA3F83A2274BDA9987F62E04CCFF13A9051DF871CEB002C2438
+      4AE0A60ECDDE60ED89B712816784E6FC44CC082B2006F21BBE005A0176974E1B
+      C1FC130363A40857EBD6392660F4BD07ADC5F9085D1FBE03AA6688F19503B4E8
+      969D30B51D234570ACC0995A97A3E7703957025C529FD7A72140ADD4D839B391
+      0FF3F7ED36081D39ADD59E1A6B8E8BA7E18053DF87F5871C50BB35CE082BCD77
+      3D1F12E09AB6B93E7801BF000000FFFF66E2E92D000000064944415403002063
+      ADAF0101CDF40000000049454E44AE426082
+    }
+  end
+end
